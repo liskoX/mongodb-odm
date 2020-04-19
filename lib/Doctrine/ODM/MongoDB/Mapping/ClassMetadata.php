@@ -955,7 +955,7 @@ class ClassMetadata implements BaseClassMetadata
 
     public function getShardKey() : array
     {
-        return $this->shardKey;
+        return $this->shardKey ?? ["keys"=>[]];
     }
 
     /**
